@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "fabric-test-mod",
+  "version": "${version}",
+
+  "name": "Fabric Test Mod",
+  "description": "",
+  "authors": [
+    "mawathilde"
+  ],
+  "contact": {
+    "sources": "https://github.com/mawathilde/test-fabric"
+  },
+
+  "license": "MIT",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "fr.mawathilde.testfabric.TestFabric"
+    ]
+  },
+  "mixins": [
+    "test.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}
